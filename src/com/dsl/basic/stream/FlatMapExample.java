@@ -42,7 +42,8 @@ public class FlatMapExample {
 
         List<List<Integer>> list = Arrays.asList(numbers, numbers2, numbers3);
         List<Integer> mergedList = list.stream().flatMap(Collection::stream).collect(Collectors.toList());
-        System.out.println("mergedList: " + mergedList);
+        System.out.println("before merge: " + list);
+        System.out.println("after merge: " + mergedList);
         System.out.println("============ EXAMPLE 2 ============");
     }
 
