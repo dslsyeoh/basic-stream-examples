@@ -3,9 +3,7 @@
  * Copyright (c) 2020. All rights reserved.
  */
 
-package com.dsl.basic.stream;
-
-import com.dsl.basic.stream.object.Person;
+package com.dsl.basic.stream.object;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -13,7 +11,7 @@ import java.util.Map;
 
 public final class PersonBuilder
 {
-    private static Person getJohn()
+    public static Person getJohn()
     {
         Map<String, String> family = new HashMap<>();
         family.put("wife", "Mrs John");
@@ -22,7 +20,7 @@ public final class PersonBuilder
         return new Person("John", 55, Arrays.asList("Workout", "Fishing"), family);
     }
 
-    private static Person getBob()
+    public static Person getBob()
     {
         Map<String, String> family = new HashMap<>();
         family.put("wife", "Mrs Bob");
@@ -30,7 +28,7 @@ public final class PersonBuilder
         return new Person("Bob", 30, Arrays.asList("Basketball", "Workout"), family);
     }
 
-    private static Person getAnthony()
+    public static Person getAnthony()
     {
         Map<String, String> family = new HashMap<>();
         family.put("wife", "Mrs Anthony");
