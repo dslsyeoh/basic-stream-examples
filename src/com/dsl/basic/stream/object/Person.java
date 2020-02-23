@@ -64,4 +64,12 @@ public class Person
     {
         this.family = family;
     }
+
+    public void print()
+    {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Hobbies: " + hobbies.toString());
+        System.out.println("Family: " + family.toString());
+    }
 }
